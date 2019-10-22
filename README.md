@@ -2,6 +2,8 @@
 Basic movie search engine for MongoDB Atlas Full Text Search
 
 Giving your users the ability to find exactly what they are looking for in your application is critical for a fantastic user experience. With MongoDB Atlas’s new Full-Text Search feature, we have made it easier than ever to integrate simple but sophisticated search capabilities into your MongoDB applications. To demonstrate just how easy it is, let’s build a movie search engine - in only 10 minutes.
+![image](https://user-images.githubusercontent.com/15270412/67252435-39d22300-f473-11e9-9d11-e3ea65480cba.png)
+
 
 Built on Apache Lucene, Atlas’ Full-Text Search adds document data to a full-text search index to make that data searchable in a highly performant, scalable manner. 
 
