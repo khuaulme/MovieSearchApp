@@ -272,14 +272,14 @@ Return the aggregation code executed on the collection by pasting your aggregati
 
 <table>
   <tr>
-    <td> return collection.aggregate(**PASTE_AGGREGATION_PIPELINE_HERE**).toArray();</td>
+    <td> return collection.aggregate( **PASTE_AGGREGATION_PIPELINE_HERE** ).toArray();</td>
   </tr>
 </table>
 
 
-Finally, after pasting the aggregation code, we changed the terms ‘werewolves and vampires’ to the generic **arg ** to match the function’s payload query argument - otherwise our movie search engine capabilities will be extremely limited. ![image alt text](assets/image_20.png){:height="25%" width="25%"}
+Finally, after pasting the aggregation code, we changed the terms ‘werewolves and vampires’ to the generic **arg** to match the function’s payload query argument - otherwise our movie search engine capabilities will be extremely limited. ![image alt text](assets/image_20.png){:height="25%" width="25%"}
 
-<img src="assets/image_20.png" width="20" height="20">
+<img scr="https://github.com/khuaulme/FTS_MovieSearch/blob/master/assets/image_20.png?raw=true" width="20">
 
 ![](assets/APICreate.gif)
 
