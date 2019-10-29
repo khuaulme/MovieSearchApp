@@ -38,7 +38,7 @@ Want to try our Full-Text Search on a cluster of your own? http://bit.ly/serverl
 
 ![image alt text](assets/image_3.jpg)
 
-*For more detailed information on how to spin up a cluster, configure your IP address, create a user, and load sample data, check out **[Getting Started with MongoDB Atla*s](https://docs.atlas.mongodb.com/getting-started/#atlas-getting-started)* from our documentation.*
+*For more detailed information on how to spin up a cluster, configure your IP address, create a user, and load sample data, check out **[Getting Started with MongoDB Atlas.** (https://docs.atlas.mongodb.com/getting-started/#atlas-getting-started)* from our documentation.*
 
 3. (Optional) MongoDB Compass - the latest version can be found here [https://www.mongodb.com/download-center/compass](https://www.mongodb.com/download-center/compass)
 
