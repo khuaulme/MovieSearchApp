@@ -8,15 +8,15 @@ Built on Apache Lucene, Atlas’ Full-Text Search adds document data to a full-t
 
 Armed with a basic knowledge of HTML and Javascript, here are the tasks we will accomplish:
 
-▢ **Spin up an Atlas cluster and load sample movie data**
+**▢ Spin up an Atlas cluster and load sample movie data**
 
-▢ **Create a Full-Text Search Index in movie data collection**
+**▢ Create a Full-Text Search Index in movie data collection**
 
-**▢ [Write an aggregation pipeline with $searchBeta operator]**(#bookmark=kix.kcnkw5ov8zkj)
+**▢ Write an aggregation pipeline with $searchBeta operator(#bookmark=kix.kcnkw5ov8zkj)**
 
-**▢ [Create a RESTful API to access data** ](#bookmark=kix.s5ejsz11gvzf)
+**▢ [Create a RESTful API to access data](#bookmark=kix.s5ejsz11gvzf)**
 
-**▢ [Call from the front end]**(#bookmark=kix.izktwtqq24ey)
+**▢ [Call from the front end](#bookmark=kix.izktwtqq24ey)**
 
 Now break out the popcorn, and get ready to find that movie that has been sitting on the tip of your tongue for weeks.
 
