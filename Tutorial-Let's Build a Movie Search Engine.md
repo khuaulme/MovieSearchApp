@@ -119,53 +119,30 @@ Note by scrolling in the right preview panel that the movie documents are return
 Now open a document’s **highlight** array to show the data objects with text **values** and **types**.
 ```json
 {
-"title":"The Mortal Instruments: City of Bones"
-"fullplot":"Set in contemporary New York City, a seemingly ordinary teenager, Clar..."
-"year":2013
-"score":6.849891185760498
-"highlight":Array
-0:Object
-path:"fullplot"
-texts:Array
-0:Object
-value:"After the disappearance of her mother, Clary must join forces with a g..."
-type:"text"
-1:Object
-value:"vampires"
-type:"hit"
-2:Object
-3:Object
-4:Object
-5:Object
-6:Object
-score:3.556248188018799</td>
-}```
+"title": "The Mortal Instruments: City of Bones"
+"fullplot": "Set in contemporary New York City, a seemingly ordinary teenager, Clar..."
+"year": 2013
+"score": 6.849891185760498
+"highlight": Array
+0: Object
+path: "fullplot"
+texts: Array
+0: Object
+value: "After the disappearance of her mother, Clary must join forces with a g..."
+type: "text"
+1: Object
+value: "vampires"
+type: "hit"
+2: Object
+3: Object
+4: Object
+5: Object
+6: Object
+score: 3.556248188018799</td>
+}
+```
 
 ***
-<table>
-  <tr>
-    <td>title:"The Mortal Instruments: City of Bones"
-fullplot:"Set in contemporary New York City, a seemingly ordinary teenager, Clar..."
-year:2013
-score:6.849891185760498
-highlight:Array
-0:Object
-path:"fullplot"
-texts:Array
-0:Object
-value:"After the disappearance of her mother, Clary must join forces with a g..."
-type:"text"
-1:Object
-value:"vampires"
-type:"hit"
-2:Object
-3:Object
-4:Object
-5:Object
-6:Object
-score:3.556248188018799</td>
-  </tr>
-</table>
 
 
 **highlight.texts.value** - text from the ‘fullplot’ field which returned a match.
