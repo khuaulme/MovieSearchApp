@@ -16,7 +16,7 @@ Armed with a basic knowledge of HTML and Javascript, here are the tasks we will 
 
 **▢ ****[Create a RESTful API to access data** ](#bookmark=kix.s5ejsz11gvzf)
 
-**▢ ****[Call from the front en**d](#bookmark=kix.izktwtqq24ey)** **
+**▢ ****[Call from the front end](#bookmark=kix.izktwtqq24ey)** **
 
 Now break out the popcorn, and get ready to find that movie that has been sitting on the tip of your tongue for weeks.
 
@@ -34,7 +34,7 @@ Want to try our Full-Text Search on a cluster of your own? http://bit.ly/serverl
 </table>
 
 
-2. Atlas Sample Data loaded into the Atlas cluster directly from the Atlas UI. You can get this by clicking the** **![image alt text](image_2.png) button and **Load Sample Dataset**.
+2. Atlas Sample Data loaded into the Atlas cluster directly from the Atlas UI. You can get this by clicking the ![image alt text](assets/image_2.png) button and **Load Sample Dataset**.
 
 ![image alt text](assets/image_3.jpg)
 
