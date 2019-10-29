@@ -279,6 +279,8 @@ Return the aggregation code executed on the collection by pasting your aggregati
 
 Finally, after pasting the aggregation code, we changed the terms ‘werewolves and vampires’ to the generic **arg ** to match the function’s payload query argument - otherwise our movie search engine capabilities will be extremely limited. ![image alt text](assets/image_20.png){:height="25%" width="25%"}
 
+<img src="assets/image_20.png" width="20" height="20">
+
 ![](assets/APICreate.gif)
 
 Now you can **test in the Console** below the editor by changing the argument from **arg1: "Hello"** to **arg: “werewolves and vampires”**.
