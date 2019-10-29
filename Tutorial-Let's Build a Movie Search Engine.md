@@ -225,7 +225,7 @@ In this service function editor, replace the example code with the following:
 ```javascript
 {
   exports = function(payload) {
-    const collection =             context.services.get("mongodb-atlas").db("sample_mflix").collection("movies");
+    const collection = context.services.get("mongodb-atlas").db("sample_mflix").collection("movies");
     let arg = payload.query.arg;
     return collection.aggregate([
         { $searchBeta: {
@@ -277,7 +277,7 @@ Return the aggregation code executed on the collection by pasting your aggregati
 </table>
 
 
-Finally, after pasting the aggregation code, we changed the terms ‘werewolves and vampires’ to the generic **arg** to match the function’s payload query argument - otherwise our movie search engine capabilities will be extremely limited. ![image alt text](assets/image_20.png?v=4&s=20)
+Finally, after pasting the aggregation code, we changed the terms ‘werewolves and vampires’ to the generic **arg** to match the function’s payload query argument - otherwise our movie search engine capabilities will be extremely limited. ![image alt text](assets/image_20.png | width=20)
 
 
 
