@@ -22,7 +22,7 @@ Now break out the popcorn, and get ready to find that movie that has been sittin
 
 ![image alt text](assets/image_1.gif)
 
-To** Get Started, **we will need:
+To **Get Started**, we will need:
 
 1. A MongoDB M30 cluster in Atlas running 4.2. Navigate to cloud.mongodb.com and sign in to **Build a New Cluster.** *(This is a temporary minimum setting while Full-Text Search is still in beta. We do have plans to expand FTS to more cluster sizes in the future.)*
 
