@@ -4,7 +4,7 @@ Giving your users the ability to find exactly what they are looking for in your 
 
 Built on Apache Lucene, Atlas’ Full-Text Search adds document data to a full-text search index to make that data searchable in a highly performant, scalable manner. This tutorial will guide you through how to build a web application to search for movies based on a topic using Atlas’ sample movie data collection. We will create an FTS index on that sample data. Then we will query on this index to filter, rank and sort through those movies to quickly surface movies by topic.
 
-![image alt text](assets/image_0.gif)
+![](assets/image_0.gif)
 
 Armed with a basic knowledge of HTML and Javascript, here are the tasks we will accomplish:
 
