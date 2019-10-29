@@ -119,9 +119,9 @@ Note by scrolling in the right preview panel that the movie documents are return
 Now open a document’s **highlight** array to show the data objects with text **values** and **types**.
 ```javascript
 {
-"title" : "The Mortal Instruments: City of Bones"
-"fullplot" : "Set in contemporary New York City, a seemingly ordinary teenager, Clar..."
-"year" : 2013
+"title": "The Mortal Instruments: City of Bones"
+"fullplot": "Set in contemporary New York City, a seemingly ordinary teenager, Clar..."
+"year": 2013
 "score": 6.849891185760498
 "highlight": Array
 0: Object
@@ -142,7 +142,7 @@ score: 3.556248188018799</td>
 }
 ```
 
-***
+
 
 
 **highlight.texts.value** - text from the ‘fullplot’ field which returned a match.
@@ -160,6 +160,26 @@ Finally, if you see results in the right preview panel, your aggregation pipelin
 ![image alt text](assets/image_13.png)
 
 Your final aggregation code will be this:
+
+```javascript
+[
+  { $searchBeta: {
+      search: {
+        query: 'werewolves and vampires',
+        path: 'fullplot' },
+     highlight: {  path: 'fullplot’ }
+       }},
+   { $project: {
+      title: 1,
+      _id: 0,
+      year: 1,
+      fullplot: 1,
+      score: { $meta: 'searchScore' },
+      highlight: { $meta: 'searchHighlights' }
+                }},
+    { $limit: 10 }
+]
+```
 
 <table>
   <tr>
