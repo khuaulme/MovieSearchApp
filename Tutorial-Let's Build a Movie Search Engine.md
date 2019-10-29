@@ -119,11 +119,11 @@ Note by scrolling in the right preview panel that the movie documents are return
 Now open a document’s **highlight** array to show the data objects with text **values** and **types**.
 ```json
 {
-title:"The Mortal Instruments: City of Bones"
-fullplot:"Set in contemporary New York City, a seemingly ordinary teenager, Clar..."
-year:2013
-score:6.849891185760498
-highlight:Array
+"title":"The Mortal Instruments: City of Bones"
+"fullplot":"Set in contemporary New York City, a seemingly ordinary teenager, Clar..."
+"year":2013
+"score":6.849891185760498
+"highlight":Array
 0:Object
 path:"fullplot"
 texts:Array
