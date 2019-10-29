@@ -277,7 +277,7 @@ Return the aggregation code executed on the collection by pasting your aggregati
 </table>
 
 
-Finally, after pasting the aggregation code, we changed the terms ‘werewolves and vampires’ to the generic **arg** to match the function’s payload query argument - otherwise our movie search engine capabilities will be extremely limited. ![image alt text](assets/image_20.png | width=20)
+Finally, after pasting the aggregation code, we changed the terms ‘werewolves and vampires’ to the generic **arg** to match the function’s payload query argument - otherwise our movie search engine capabilities will be extremely limited. ![image alt text](assets/image_20.png| width=20)
 
 
 
