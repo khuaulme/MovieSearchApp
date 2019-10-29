@@ -117,11 +117,11 @@ Note by scrolling in the right preview panel that the movie documents are return
 **Because ***_searchHighlights _***and***_ searchScore_*** are not part of the original document, it is necessary to use a ***_$project_*** pipeline stage to add them to the query output.*
 
 Now open a document’s **highlight** array to show the data objects with text **values** and **types**.
-```json
+```javascript
 {
-"title": "The Mortal Instruments: City of Bones"
-"fullplot": "Set in contemporary New York City, a seemingly ordinary teenager, Clar..."
-"year": 2013
+"title" : "The Mortal Instruments: City of Bones"
+"fullplot" : "Set in contemporary New York City, a seemingly ordinary teenager, Clar..."
+"year" : 2013
 "score": 6.849891185760498
 "highlight": Array
 0: Object
