@@ -20,7 +20,7 @@ Armed with a basic knowledge of HTML and Javascript, here are the tasks we will 
 
 Now break out the popcorn, and get ready to find that movie that has been sitting on the tip of your tongue for weeks.
 
-![image alt text](assets/image_1.gif)
+![image alt text](assets/popcorn.gif)
 
 To **Get Started**, we will need:
 
@@ -351,6 +351,6 @@ Now save these changes, and open the** index.html** file once more in your brows
 
 Now that you have just seen how easy it is to build a simple, powerful search into an application with MongoDB’s new Full-Text Search Indexes, go ahead and experiment with other more advanced features, such as type-ahead or fuzzy matching, for your fine-grained searches. Check out our **[$searchBeta](https://docs.atlas.mongodb.com/reference/full-text-search/query-syntax/)** documentation for other possibilities.
 
-![image alt text](assets/image_31.gif)
+![image alt text](assets/Find.gif)
 
 Harnessing the power of Apache Lucene for efficient search algorithms, static and dynamic field mapping  for flexible, scalable indexing, all while using the same MongoDB Query Language (MQL) you already know and love, *[*spoken in our very best Liam Neeson impression**](https://youtu.be/jZOywn1qArI) MongoDB now has a very particular set of skills. Skills we have acquired over a very long career. Skills that make MongoDB a DREAM for developers like you.
