@@ -181,38 +181,10 @@ Your final aggregation code will be this:
 ]
 ```
 
-<table>
-  <tr>
-    <td>[
-    { $searchBeta: {
-search: {
-      query: 'werewolves and vampires',
-      path: 'fullplot' },
- highlight: {  path: 'fullplot’ }
-               }},
-               { $project: {
- title: 1,
- _id: 0,
- year: 1,
- fullplot: 1,
- score: { $meta: 'searchScore' },
- highlight: { $meta: 'searchHighlights' }
-                }},
-                { $limit: 10 }
-]</td>
-  </tr>
-  <tr>
-    <td></td>
-  </tr>
-  <tr>
-    <td></td>
-  </tr>
-</table>
-
 
 **This small snippet of code powers our movie search application! 💪**
 
-✅ **Spin up Atlas cluster and load sample movie data		**
+**✅ Spin up Atlas cluster and load sample movie data**
 
 **✅ Create an FTS Index in movie data collection**
 
@@ -220,13 +192,13 @@ search: {
 
 **▢ Create a RESTful API to access data**
 
-**▢ Call from the front end **
+**▢ Call from the front end**
 
 ### **CREATE A REST API**
 
 Now that we have the heart of our movie search engine in the form of an aggregation pipeline, how will we use it in an application? There are lots of ways to do this, but I found the easiest was to simply create a RESTful API to expose this data - and for that I used MongoDB Stitch’s HTTP Service.
 
-Stitch is MongoDB’s serverless platform where functions written in Javascript automatically scale to meet current demand. To create a Stitch application, return to your Atlas UI and click **Stitch **under SERVICES on the left menu. Then click
+Stitch is MongoDB’s serverless platform where functions written in Javascript automatically scale to meet current demand. To create a Stitch application, return to your Atlas UI and click **Stitch** under SERVICES on the left menu. Then click
 
 ![image alt text](assets/image_14.png)
 
@@ -250,39 +222,31 @@ Enable **Respond with Result**, set the HTTP Method to **GET**, and to make thin
 
 In this service function editor, replace the example code with the following:
 
-<table>
-  <tr>
-    <td>exports = function(payload) {
-  const collection =             context.services.get("mongodb-atlas").db("sample_mflix").collection("movies");
-  let arg = payload.query.arg;
-  return collection.aggregate([
-  	  { $searchBeta: {
-                     search: {
-                        query: arg,
-                        path:'fullplot',
-                      },
-                      highlight: { path: 'fullplot' }
-              }},
-              { $project: {
-                     title: 1,
-                     _id:0,
-                     year:1,
-                     fullplot:1,
-                     score: { $meta: 'searchScore'},
-                     highlight: {$meta: 'searchHighlights'}
-              }},
-              { $limit: 10}
-      ]).toArray();
-};</td>
-  </tr>
-  <tr>
-    <td></td>
-  </tr>
-  <tr>
-    <td></td>
-  </tr>
-</table>
-
+```javascript
+{
+  exports = function(payload) {
+    const collection =             context.services.get("mongodb-atlas").db("sample_mflix").collection("movies");
+    let arg = payload.query.arg;
+    return collection.aggregate([
+        { $searchBeta: {
+                       search: {
+                          query: arg,
+                          path:'fullplot',
+                        },
+                        highlight: { path: 'fullplot' }
+                }},
+                { $project: {
+                       title: 1,
+                       _id:0,
+                       year:1,
+                       fullplot:1,
+                       score: { $meta: 'searchScore'},
+                       highlight: {$meta: 'searchHighlights'}
+                }},
+                { $limit: 10}
+        ]).toArray();
+}
+```
 
 MongoDB Stitch interacts with your Atlas movies collection through the global **context** variable. In the service function, we use that context variable to access the sample_mflix.movies collection in your Atlas cluster:
 
