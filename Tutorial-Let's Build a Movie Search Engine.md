@@ -66,9 +66,9 @@ The first thing we need is a Full-Text Search Index. The top right tab is titled
 
 By default, we dynamically map all the text fields in your collection. This suits MongoDB’s flexible data model perfectly. As you add new data to your collection and your schema evolves, dynamic mapping accommodates those changes in your schema and adds that new data to the FTS index automatically.
 
-Let’s accept the default settings and click **Create Index. ***And***_ _***that’s all you need to do to start taking advantage of Lucene in your MongoDB Atlas data! *👊
+Let’s accept the default settings and click **Create Index.** That’s all you need to do to start taking advantage of Lucene in your MongoDB Atlas data! 👊
 
-✅ **Spin up Atlas cluster and load sample movie data**
+**✅ Spin up Atlas cluster and load sample movie data**
 
 **✅ Create a Full-Text Search Index in movie data collection**
 
@@ -117,7 +117,31 @@ Note by scrolling in the right preview panel that the movie documents are return
 **Because ***_searchHighlights _***and***_ searchScore_*** are not part of the original document, it is necessary to use a ***_$project_*** pipeline stage to add them to the query output.*
 
 Now open a document’s **highlight** array to show the data objects with text **values** and **types**.
+```json
+{
+title:"The Mortal Instruments: City of Bones"
+fullplot:"Set in contemporary New York City, a seemingly ordinary teenager, Clar..."
+year:2013
+score:6.849891185760498
+highlight:Array
+0:Object
+path:"fullplot"
+texts:Array
+0:Object
+value:"After the disappearance of her mother, Clary must join forces with a g..."
+type:"text"
+1:Object
+value:"vampires"
+type:"hit"
+2:Object
+3:Object
+4:Object
+5:Object
+6:Object
+score:3.556248188018799</td>
+}```
 
+***
 <table>
   <tr>
     <td>title:"The Mortal Instruments: City of Bones"
