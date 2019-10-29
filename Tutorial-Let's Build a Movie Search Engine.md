@@ -281,7 +281,7 @@ Finally, after pasting the aggregation code, we changed the terms ‘werewolves 
 
 ![image alt text](assets/image_21.gif)
 
-Now you can **test in the Console** below the editor by changing the argument from **arg1: "Hello"** to **arg****: “werewolves and vampires”**.
+Now you can **test in the Console** below the editor by changing the argument from **arg1: "Hello"** to **arg**: “werewolves and vampires”**.
 
 ![image alt text](assets/image_22.jpg)
 
