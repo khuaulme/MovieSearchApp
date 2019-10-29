@@ -1,4 +1,4 @@
-# Let's Build a Movie Search Engine Using Full Text Search Indexes in Minutes!
+# Let's Build a Movie Search Engine Using Atlas Full Text Search in Minutes!
 
 Giving your users the ability to find exactly what they are looking for in your application is critical for a fantastic user experience. With MongoDB Atlas’s new Full-Text Search feature, we have made it easier than ever to integrate simple yet sophisticated search capabilities into your MongoDB applications. To demonstrate just how easy it is, let’s build a movie search engine - in only 10 minutes.
 
