@@ -327,7 +327,7 @@ Click the **COPY** button and paste the URL into your browser. Then append the f
 
 ### **FINALLY! - THE FRONT END**
 
-From the front end application, it takes a single call from the Fetch API to retrieve this data. Download the following[ index.html file](http://bit.ly/MDB_FTS_MovieSearch) ![image alt text](image_28.png) and open in your browser. You will see a simple search bar:
+From the front end application, it takes a single call from the Fetch API to retrieve this data. Download the following[ index.html file](http://bit.ly/MDB_FTS_MovieSearch) ![image alt text](assets/image_28.png) and open in your browser. You will see a simple search bar:
 
 ![image alt text](assets/image_29.png)
 
