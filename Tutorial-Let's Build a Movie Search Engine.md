@@ -38,7 +38,7 @@ Want to try our Full-Text Search on a cluster of your own? http://bit.ly/serverl
 
 ![image alt text](assets/image_3.jpg)
 
-*For more detailed information on how to spin up a cluster, configure your IP address, create a user, and load sample data, check out **[Getting Started with MongoDB Atlas.** (https://docs.atlas.mongodb.com/getting-started/#atlas-getting-started)* from our documentation.*
+*For more detailed information on how to spin up a cluster, configure your IP address, create a user, and load sample data, check out **[Getting Started with MongoDB Atlas.** (https://docs.atlas.mongodb.com/getting-started/#atlas-getting-started) from our documentation.*
 
 3. (Optional) MongoDB Compass - the latest version can be found here [https://www.mongodb.com/download-center/compass](https://www.mongodb.com/download-center/compass)
 
@@ -48,13 +48,13 @@ Now you have data in a database, let’s have a closer look to see what we are w
 
 **✅** **Spin up an Atlas cluster and load sample movie data**
 
-▢ **Create a Full-Text Search Index in movie data collection		**
+▢ **Create a Full-Text Search Index in movie data collection**
 
-**▢ ****[Write an aggregation pipeline with $searchBeta operato**r](#bookmark=kix.kcnkw5ov8zkj)
+**▢ ****[Write an aggregation pipeline with $searchBeta operator]**(#bookmark=kix.kcnkw5ov8zkj)
 
 **▢ ****[Create a RESTful API to access data** ](#bookmark=kix.s5ejsz11gvzf)
 
-**▢ ****[Call from the front en**d](#bookmark=kix.izktwtqq24ey)** **
+**▢ ****[Call from the front end](#bookmark=kix.izktwtqq24ey)**
 
 ### **CREATE A FULL-TEXT SEARCH INDEX**
 
@@ -68,7 +68,7 @@ By default, we dynamically map all the text fields in your collection. This suit
 
 Let’s accept the default settings and click **Create Index. ***And***_ _***that’s all you need to do to start taking advantage of Lucene in your MongoDB Atlas data! *👊
 
-✅ **Spin up Atlas cluster and load sample movie data		**
+✅ **Spin up Atlas cluster and load sample movie data**
 
 **✅ Create a Full-Text Search Index in movie data collection**
 
@@ -76,13 +76,13 @@ Let’s accept the default settings and click **Create Index. ***And***_ _***tha
 
 **▢ Create a RESTful API to access data**
 
-**▢ Call from the front end **
+**▢ Call from the front end**
 
 ### **WRITE AGGREGATION PIPELINE WITH $SEARCHBETA OPERATOR**
 
 Full-Text Search Queries take the form of an aggregation pipeline stage.  The **$searchBeta** stage performs a full-text search on the specified field or fields covered by the FTS index, and it must be used as the first stage in the aggregation pipeline. Now let’s use MongoDB Compass to see an aggregation pipeline that makes use of this Full-Text Search Index.
 
-*You do not have to use Compass for this stage, but I really love the easy-to-use UI Compass has to offer. Plus the ability to preview the results by stage makes troubleshooting a snap! For more on Compass’ Aggregation Pipeline Builder, check out this **[blog*.](https://www.mongodb.com/blog/post/introducing-the-aggregation-pipeline-builder-in-mongodb-compass)*  *
+*You do not have to use Compass for this stage, but I really love the easy-to-use UI Compass has to offer. Plus the ability to preview the results by stage makes troubleshooting a snap! For more on Compass’ Aggregation Pipeline Builder, check out this **[blog.](https://www.mongodb.com/blog/post/introducing-the-aggregation-pipeline-builder-in-mongodb-compass)**
 
 Navigate to the Aggregations tab in the sample_mflix.movies collection:
 
@@ -92,7 +92,7 @@ Navigate to the Aggregations tab in the sample_mflix.movies collection:
 
 ![image alt text](assets/image_8.png)
 
-For the first stage, select the** $searchBeta **aggregation operator to search for the terms ‘werewolves and vampires’ in the ‘fullplot’ field.
+For the first stage, select the **$searchBeta** aggregation operator to search for the terms ‘werewolves and vampires’ in the ‘fullplot’ field.
 
 
 
@@ -100,7 +100,7 @@ Using the **highlight option** will return the highlights by adding fields to th
 
 ![image alt text](assets/image_9.png)
 
-**Note the returned movie documents in the preview panel on the right. If no documents are in the panel, double check the formatting in your aggregation code.*
+**Note the returned movie documents in the preview panel on the right. If no documents are in the panel, double check the formatting in your aggregation code.**
 
 **Stage 2: $project**
 
