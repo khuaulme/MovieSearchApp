@@ -272,7 +272,7 @@ Return the aggregation code executed on the collection by pasting your aggregati
 
 <table>
   <tr>
-    <td> return collection.aggregate(**<PASTE AGGREGATION PIPELINE HERE>**).toArray();</td>
+    <td> return collection.aggregate(**PASTE_AGGREGATION_PIPELINE_HERE**).toArray();</td>
   </tr>
 </table>
 
@@ -285,7 +285,7 @@ Now you can **test in the Console** below the editor by changing the argument fr
 
 ![image alt text](assets/image_22.jpg)
 
-Click **Run **to verify the result:
+Click **Run** to verify the result:
 
 ![image alt text](assets/image_23.png)
 
@@ -337,7 +337,7 @@ Now open the html file with your favorite text editor and familiarize yourself w
 
 * Line 82 **- userAction()** will execute when the user enters a search. If there is valid input in the search box and no errors, we will call the **buildMovieList()** function.
 
-* Line 125 -** buildMovieList()** is a helper function for **userAction()** which will build out the list of movies, along with their scores and highlights from the fullplot field. Notice in line 146 that if the **highlight.texts.type === "hit"** we highlight the **highlight.texts.value** with the **<mark>** tag.
+* Line 125 -**buildMovieList()** is a helper function for **userAction()** which will build out the list of movies, along with their scores and highlights from the fullplot field. Notice in line 146 that if the **highlight.texts.type === "hit"** we highlight the **highlight.texts.value** with the **<mark>** tag.
 
 ### **Modify the Front End Code to Use Your API**
 
@@ -349,7 +349,7 @@ Now save these changes, and open the** index.html** file once more in your brows
 
 **THAT’S A WRAP!**
 
-Now that you have just seen how easy it is to build a simple, powerful search into an application with MongoDB’s new Full-Text Search Indexes, go ahead and experiment with other more advanced features, such as type-ahead or fuzzy matching, for your fine-grained searches. Check out our **[$searchBeta** ](https://docs.atlas.mongodb.com/reference/full-text-search/query-syntax/)documentation for other possibilities.
+Now that you have just seen how easy it is to build a simple, powerful search into an application with MongoDB’s new Full-Text Search Indexes, go ahead and experiment with other more advanced features, such as type-ahead or fuzzy matching, for your fine-grained searches. Check out our **[$searchBeta](https://docs.atlas.mongodb.com/reference/full-text-search/query-syntax/)** documentation for other possibilities.
 
 ![image alt text](assets/image_31.gif)
 
