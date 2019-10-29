@@ -12,7 +12,7 @@ Armed with a basic knowledge of HTML and Javascript, here are the tasks we will 
 
 **▢ Create a Full-Text Search Index in movie data collection**
 
-**▢ Write an aggregation pipeline with $searchBeta operator(#bookmark=kix.kcnkw5ov8zkj)**
+**▢ [Write an aggregation pipeline with $searchBeta operator](#bookmark=kix.kcnkw5ov8zkj)**
 
 **▢ [Create a RESTful API to access data](#bookmark=kix.s5ejsz11gvzf)**
 
@@ -48,13 +48,13 @@ Now you have data in a database, let’s have a closer look to see what we are w
 
 **✅** **Spin up an Atlas cluster and load sample movie data**
 
-▢ **Create a Full-Text Search Index in movie data collection**
+**▢ Create a Full-Text Search Index in movie data collection**
 
-**▢ ****[Write an aggregation pipeline with $searchBeta operator]**(#bookmark=kix.kcnkw5ov8zkj)
+**▢ [Write an aggregation pipeline with $searchBeta operator](#bookmark=kix.kcnkw5ov8zkj)**
 
-**▢ ****[Create a RESTful API to access data** ](#bookmark=kix.s5ejsz11gvzf)
+**▢ [Create a RESTful API to access data](#bookmark=kix.s5ejsz11gvzf)**
 
-**▢ ****[Call from the front end](#bookmark=kix.izktwtqq24ey)**
+**▢ [Call from the front end](#bookmark=kix.izktwtqq24ey)**
 
 ### **CREATE A FULL-TEXT SEARCH INDEX**
 
