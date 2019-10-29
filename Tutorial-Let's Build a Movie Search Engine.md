@@ -119,26 +119,26 @@ Note by scrolling in the right preview panel that the movie documents are return
 Now open a document’s **highlight** array to show the data objects with text **values** and **types**.
 ```javascript
 {
-"title": "The Mortal Instruments: City of Bones"
-"fullplot": "Set in contemporary New York City, a seemingly ordinary teenager, Clar..."
-"year": 2013
-"score": 6.849891185760498
-"highlight": Array
-0: Object
-path: "fullplot"
-texts: Array
-0: Object
-value: "After the disappearance of her mother, Clary must join forces with a g..."
-type: "text"
-1: Object
-value: "vampires"
-type: "hit"
-2: Object
-3: Object
-4: Object
-5: Object
-6: Object
-score: 3.556248188018799</td>
+  "title": "The Mortal Instruments: City of Bones"
+  "fullplot": "Set in contemporary New York City, a seemingly ordinary teenager, Clar..."
+  "year": 2013
+  "score": 6.849891185760498
+  "highlight": Array
+  0: Object
+  path: "fullplot"
+  texts: Array
+  0: Object
+  value: "After the disappearance of her mother, Clary must join forces with a g..."
+  type: "text"
+  1: Object
+  value: "vampires"
+  type: "hit"
+  2: Object
+  3: Object
+  4: Object
+  5: Object
+  6: Object
+  score: 3.556248188018799</td>
 }
 ```
 
@@ -252,7 +252,7 @@ MongoDB Stitch interacts with your Atlas movies collection through the global **
 
 <table>
   <tr>
-    <td>const collection =            context.services.get("mongodb-atlas").db("sample_mflix").collection("movies");</td>
+    <td>const collection = context.services.get("mongodb-atlas").db("sample_mflix").collection("movies");</td>
   </tr>
 </table>
 
@@ -272,7 +272,7 @@ Return the aggregation code executed on the collection by pasting your aggregati
 
 <table>
   <tr>
-    <td> return collection.aggregate(<<PASTE AGGREGATION PIPELINE HERE>>).toArray();</td>
+    <td> return collection.aggregate(**<PASTE AGGREGATION PIPELINE HERE>**).toArray();</td>
   </tr>
 </table>
 
@@ -313,7 +313,7 @@ Click the **COPY** button and paste the URL into your browser. Then append the f
 </table>
 
 
-✅ **Spin up Atlas cluster and load sample movie data		**
+**✅ Spin up Atlas cluster and load sample movie data**
 
 **✅ Create a Full-Text Search Index in movie data collection**
 
@@ -321,7 +321,7 @@ Click the **COPY** button and paste the URL into your browser. Then append the f
 
 **✅ Create a RESTful API to access data**
 
-**▢ Call from the front end **
+**▢ Call from the front end**
 
 ![image alt text](assets/image_27.gif)
 
@@ -335,7 +335,7 @@ Entering data in the search bar will bring you movie search results because the 
 
 Now open the html file with your favorite text editor and familiarize yourself with the contents. You’ll note the **<body>** contains a very simple container and 2 javascript functions:
 
-* Line 82 **- userAction()** will execute when the user enters a search. If there is valid input in the search box and no errors, we will call the **buildMovieList() **function.
+* Line 82 **- userAction()** will execute when the user enters a search. If there is valid input in the search box and no errors, we will call the **buildMovieList()** function.
 
 * Line 125 -** buildMovieList()** is a helper function for **userAction()** which will build out the list of movies, along with their scores and highlights from the fullplot field. Notice in line 146 that if the **highlight.texts.type === "hit"** we highlight the **highlight.texts.value** with the **<mark>** tag.
 
