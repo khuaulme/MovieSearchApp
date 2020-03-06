@@ -83,7 +83,10 @@
         let searchString = document.getElementById("myInput").value;
         let txt = "";
         console.log(searchString);
-        let webhook_url = "https://webhooks.mongodb-stitch.com/api/client/v2.0/app/ftsdemo-flweq/service/movies-basic-FTS/incoming_webhook/movies-basic-FTS";
+        
+        //----------------- MODIFY WEBHOOK_URL BELOW ------------------------
+
+        let webhook_url = "<<INSERT WEBHOOK_URL HERE>>";
     
         let url = webhook_url + "?arg=" + searchString;
 
@@ -142,7 +145,7 @@
             for (j = 0; j < highlight_length; j++) {
                 for (k = 0; k < movies[i].highlight[j].texts.length; k++) {
                     if (movies[i].highlight[j].texts[k].type === "hit") {
-                        txt += `<b><mark> ${movies[i].highlight[j].texts[k].value} </mark></b>`;
+                        txt += `<b><span style="background-color: #FFFF00"> ${movies[i].highlight[j].texts[k].value} </span></b>`;
                     } else {
                         txt += movies[i].highlight[j].texts[k].value;
                     }
