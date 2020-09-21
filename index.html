@@ -43,7 +43,7 @@
     }
    </style>
     <script src="https://kit.fontawesome.com/e1f93e03c9.js"></script>
-    <title>Full Text Search</title>
+    <title>MovieSearchApp</title>
 </head>
 <body>
 <div class="container">
@@ -72,7 +72,6 @@
         </div>
     </header>
 
-
     <div>
         <p id="results" style="font-size: 1.8em"></p>
     </div>
@@ -86,7 +85,7 @@
         
         //----------------- MODIFY WEBHOOK_URL BELOW ------------------------
 
-        let webhook_url = "<<INSERT WEBHOOK_URL HERE>>";
+        let webhook_url = "https://webhooks.mongodb-realm.com/api/client/v2.0/app/ftsdemo-zcyez/service/movies-basic-FTS/incoming_webhook/movies-basic-FTS";
     
         let url = webhook_url + "?arg=" + searchString;
 
