@@ -1,10 +1,10 @@
 
 # MovieSearch
-Basic movie search engine for MongoDB Atlas Search - Twitch stream 3/6.
+Basic movie search engine for MongoDB Atlas Search .
 
 For a full tutorial, visit: https://www.mongodb.com/blog/post/lets-build-a-movie-search-engine-using-full-text-search-indexes-in-ten-minutes
 
-Giving your users the ability to find exactly what they are looking for in your application is critical for a fantastic user experience. With MongoDB Atlas’s new Full-Text Search feature, we have made it easier than ever to integrate simple but sophisticated search capabilities into your MongoDB applications. To demonstrate just how easy it is, we will build a simple movie search engine in less that 10 minutes!
+Giving your users the ability to find exactly what they are looking for in your application is critical for a fantastic user experience. With MongoDB Atlas’s new Atlas Search feature, we have made it easier than ever to integrate simple but sophisticated search capabilities into your MongoDB applications. To demonstrate just how easy it is, we will build a simple movie search engine in less that 10 minutes!
 ![](assets/movie.gif)
 
   Armed with a basic knowledge of HTML and Javascript, here are the tasks we will accomplish:
@@ -17,7 +17,7 @@ Giving your users the ability to find exactly what they are looking for in your 
 
 
   Before we get started, we will need:
-1. A MongoDB M30 cluster in Atlas running 4.2. *(This is a temporary minimum setting while Full-Text Search is still in beta. We do have plans to expand FTS to more cluster sizes in the future.)*
+1. A MongoDB Atlas cluster running a minimum 4.2. 
 2. Atlas Sample Data loaded into the Atlas cluster directly from the Atlas UI. You can get this by clicking the &nbsp; <button style="border-radius: 5px; width:35px;">...</button>&nbsp; button and **Load Sample Dataset**.
 
 ## The Front End
@@ -37,8 +37,8 @@ Now open the html file with your favorite text editor and familiarize yourself w
 
 In the **userAction() **function, we grab the input from the search form in line 83 and append it to the webhook URL before calling the fetch API in line 92.  My data webhook URL from the FTSDemo Stitch application is on line 88. Replace that **webhook_url** variable with your own API from your Stitch HTTP Service. 🤞
 
-Now save these changes, and open the** index.html** file once more in your browser et voilà! You have just built your movie search engine using Full-Text search indexes. 🙌 What kind of movie do you want to watch?!
+Now save these changes, and open the** index.html** file once more in your browser et voilà! You have just built your movie search engine Atlas Search indexes. 🙌 What kind of movie do you want to watch?!
 
-*For a detailed tutorial with screenshots and sample code, read the accompanying Tutorial.md or visit: https://www.mongodb.com/blog/post/lets-build-a-movie-search-engine-using-full-text-search-indexes-in-ten-minutes . This tutorial will guide you through how to build a web application to search for movies based on a topic using Atlas’ sample movie data collection. We will create an FTS index on that sample data. Then we will query on this index to filter, rank and sort through those movies to quickly surface movies by topic.*
+*For a detailed tutorial with screenshots and sample code, read the accompanying Tutorial.md or visit: https://www.mongodb.com/blog/post/lets-build-a-movie-search-engine-using-full-text-search-indexes-in-ten-minutes . This tutorial will guide you through how to build a web application to search for movies based on a topic using Atlas’ sample movie data collection. We will create an Search index on that sample data. Then we will query on this index to filter, rank and sort through those movies to quickly surface movies by topic.*
 
 Built on Apache Lucene, Atlas Search adds document data to a search index to make that data searchable in a highly performant, scalable manner. 
