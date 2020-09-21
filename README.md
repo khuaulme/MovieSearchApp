@@ -4,16 +4,20 @@ Basic movie search engine for MongoDB Atlas Search .
 
 For a full tutorial, visit: https://www.mongodb.com/blog/post/lets-build-a-movie-search-engine-using-full-text-search-indexes-in-ten-minutes
 
-Giving your users the ability to find exactly what they are looking for in your application is critical for a fantastic user experience. With MongoDB Atlas’s new Atlas Search feature, we have made it easier than ever to integrate simple but sophisticated search capabilities into your MongoDB applications. To demonstrate just how easy it is, we will build a simple movie search engine in less that 10 minutes!
+Giving your users the ability to find exactly what they are looking for in your application is critical for a fantastic user experience. With MongoDB Atlas’s new Atlas Search feature, we have made it easier than ever to integrate simple but sophisticated search capabilities into your MongoDB applications. 
+Harnessing the power of Apache Lucene for efficient search algorithms, static and dynamic field mapping for flexible, scalable indexing, all
+while using the same MongoDB Query Language (MQL) you already know and love, `spoken in our very best Liam Neeson impression <https://youtu.be/jZOywn1qArI>`__ MongoDB now has a very particular set of skills. Skills we have acquired over a very long career. Skills that make MongoDB a DREAM for developers like you.
+
+To demonstrate just how easy it is, we will build a simple movie search engine in less that 10 minutes!
 ![](assets/movie.gif)
 
-  Armed with a basic knowledge of HTML and Javascript, here are the tasks we will accomplish:
+  Armed with a basic knowledge of HTML and Javascript, here are the tasks we will accomplish in tutorial:
 #### TO-DO LIST
 ###### ▢ &nbsp; Spin up an Atlas cluster and load sample movie data
-###### ▢ &nbsp; Create a Full-Text Search Index
-###### ▢ &nbsp; Write an aggregation pipeline with $searchBeta operator
+###### ▢ &nbsp; Create a Search Index
+###### ▢ &nbsp; Write an aggregation pipeline with $search operator
 ###### ▢ &nbsp; Create a RESTful API to access data
-###### ▢ &nbsp; Call from the front end
+###### ▢ &nbsp; Call API from a web application front-end
 
 
   Before we get started, we will need:
